@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import {
   CurrentTimeProvider,
   SnackBarProvider,
@@ -8,12 +9,14 @@ import Site from './views/Site';
 
 export default function App() {
   return (
-    <CurrentTimeProvider>
-      <SnackBarProvider>
-        <UserProvider>
-          <Site />
-        </UserProvider>
-      </SnackBarProvider>
-    </CurrentTimeProvider>
+    <BrowserRouter>
+      <CurrentTimeProvider>
+        <SnackBarProvider>
+          <UserProvider>
+            <Site />
+          </UserProvider>
+        </SnackBarProvider>
+      </CurrentTimeProvider>
+    </BrowserRouter>
   );
 }

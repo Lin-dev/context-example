@@ -3,7 +3,7 @@ import { useSnackBar } from 'providers';
 import Tabs, { Tab } from 'components/Tabs/Tabs';
 import Time from 'components/Time/Time';
 
-export default function SomePage() {
+export default function Page1() {
   const snackBar = useSnackBar();
 
   return (

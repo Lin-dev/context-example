@@ -46,8 +46,8 @@ and finally:
 - `npm run lint`
   - runs js and css linting over the project
 
-- folder structure
-  - `/src/components` contains global shared components
-  - `/src/hooks` contains global react hooks
-  - `/src/providers` contains global providers made from react contexts
-  - `/src/views` contains components for specific pages
+### Folder Structure
+- `/src/components` contains global shared components
+- `/src/hooks` contains global react hooks
+- `/src/providers` contains global providers made from react contexts
+- `/src/views` contains components for specific pages

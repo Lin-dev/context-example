@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useUser } from 'providers';
 
 export default function Layout(props) {
@@ -11,6 +12,8 @@ export default function Layout(props) {
   return (
     <div>
       <div>
+        <Link to="/">Page 1</Link>
+        <Link to="/page2">Page 2</Link>
         {user.name}
         <img
           src={user.avatar}

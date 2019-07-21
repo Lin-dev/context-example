@@ -13,7 +13,6 @@ export function TabsProvider(props) {
 
   // example of state kept in a provider
   const [state, setState] = useState({
-    contentRef: undefined,
     selectedTabId: undefined,
   });
 
