@@ -1,22 +1,13 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import {
-  CurrentTimeProvider,
-  SnackBarProvider,
-  UserProvider,
-} from 'providers';
+import { CountProvider } from 'providers';
 import Site from './views/Site';
 
 export default function App() {
+  console.log('app rendered');
+
   return (
-    <BrowserRouter>
-      <CurrentTimeProvider>
-        <SnackBarProvider>
-          <UserProvider>
-            <Site />
-          </UserProvider>
-        </SnackBarProvider>
-      </CurrentTimeProvider>
-    </BrowserRouter>
+    <CountProvider>
+      <Site />
+    </CountProvider>
   );
 }
